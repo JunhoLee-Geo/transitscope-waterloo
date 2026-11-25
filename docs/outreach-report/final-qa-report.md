@@ -1,6 +1,6 @@
 # Final QA report
 
-Release checks: November 25, 2026. Local application: Vite at 127.0.0.1:5174. Public deployment verification is pending. This is targeted Chromium/browser-tool QA, not a cross-browser or WCAG certification. Prior Phase 5 observations are explicitly identified rather than represented as new tests.
+Release checks: November 25, 2026. Local application: Vite at 127.0.0.1:5174. Public deployment succeeded and was browser-verified at https://junholee-geo.github.io/transitscope-waterloo/. This is targeted Chromium/browser-tool QA, not a cross-browser or WCAG certification. Prior Phase 5 observations are explicitly identified rather than represented as new tests.
 
 | Test | Expected | Observed | Status | Issue / corrective action |
 |---|---|---|---|---|
@@ -20,7 +20,7 @@ Release checks: November 25, 2026. Local application: Vite at 127.0.0.1:5174. Pu
 | Failure handling | Data/basemap failure does not hang analytics | Regression verifies style-ready independent load; code isolates source failure and unavailable state | Pass (unit/code) | Live network fault injection not tested |
 | Spatial data | Source attributes, geometry, totals, classes agree | All nine files pass release validation, independent GTFS count check | Pass | Explicit precision tolerances; historical archive still missing |
 | Tests/build | Reproducible syntax and bundle | 24 JS, 14 Python tests passed; syntax/build successful | Pass | No separate lint/typecheck configured for vanilla JS |
-| Public URL | Assets/data/controls load below repository subpath | Not yet deployed | Not tested | Complete authenticated deployment and verify |
+| Public URL | Assets/data/controls load below repository subpath | HTTP 200; all nine data hashes match; live search, municipal filtering, layers, source dialog and streets worked; no console errors/warnings | Pass | See deployment-verification.json |
 
 ## Reliability fixes
 
@@ -33,3 +33,13 @@ Production build measured main JS 1,103.32 kB / 308.41 kB gzip; CSS 89.14 kB / 1
 ## Remaining manual academic work
 
 Student-authored reflection, personal documentation reading, report-ready screenshot capture, screen-reader testing and any course-specific assessment remain personal activities. Public deployment evidence will be recorded below when observed.
+
+## Final follow-up (supersedes pending rows above)
+
+The final browser session repeated route 19 search, explicit no-match feedback, selected-attribute CSV, map PNG, zoom in/out, extent reset and fullscreen entry/exit successfully. Fullscreen pressed state changed on entry and exit. Actual downloads are saved in ../evidence/phase6-route19.csv, phase6-municipalities.csv and phase6-map-export.png. Route export retains shape_count 6. Panning remains prior browser evidence. Query `19 Hazel` produced no result; route ID `19` works. Combined ID/name matching is a search limitation.
+
+Initial successful Actions run: https://github.com/JunhoLee-Geo/transitscope-waterloo/actions/runs/45591062551 (commit bb60414). Clean Linux CI completed npm ci, tests, syntax checks, build and deployment. Local npm ci encountered Windows locks from the running server; npm install restored dependencies with no lockfile change. Fresh local reload worked. Raw archives, environments and credentials are excluded. Original repository remained clean.
+
+The public browser confirmed regional statistics, Wellesley 11,318/19/11/0%, stop 4236, enabled transit layer and source dialog under the repository subpath. Deployed JS/CSS returned HTTP 200. All nine GeoJSON hashes match local files. Live map rendering exercised the worker. No warning/error logs occurred during tested public interactions. This is point-in-time validation, not ongoing monitoring.
+
+External source links in index.html returned HTTP 200 (external-link-check.json). Final attribution wording was aligned with the Region licence in both network credits and PNG footer; tests/check/build passed again. Final main bundle is 1,103.39 kB (308.42 kB gzip).

@@ -32,7 +32,7 @@ export function installMapTools(map, resetLayers) {
           'Historical: 2021 Census / 9 Sep 2026 analysis. GTFS snapshot: 24 Nov 2026.',
           'Straight-line proximity; scheduled service, not live arrivals.',
           '© OpenStreetMap contributors — https://www.openstreetmap.org/copyright',
-          'Statistics Canada / Junho Lee; contains Region of Waterloo information under licence.',
+          'Statistics Canada / Junho Lee; Contains information provided by the Regional Municipality of Waterloo under licence.',
           'Basemap: ' + $('basemap-toolbar').selectedOptions[0].text + '. UI panels are not included.'];
         lines.forEach((line, index) => ctx.fillText(line, 12, mapCanvas.height + 22 + index * 22, canvas.width - 24));
         canvas.toBlob(blob => {

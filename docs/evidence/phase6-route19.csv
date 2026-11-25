@@ -1,0 +1,2 @@
+﻿"route_short_name","route_long_name","route_type","route_id","feed_id","service_date","provider","source_url","shape_count","dataset"
+"19","Hazel","3","19","bus","2026-11-24","Grand River Transit / Regional Municipality of Waterloo","https://webapps.regionofwaterloo.ca/api/grt-routes/api/staticfeeds/1","6","GTFS network 2026-11-24"

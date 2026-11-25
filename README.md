@@ -2,22 +2,24 @@
 
 An interactive Web GIS for exploring historical population proximity to public transit and a separately dated GRT network snapshot. TransitScope extends [the original Python spatial analysis](https://github.com/JunhoLee-Geo/Waterloo-transit-accessibility) into an accessible JavaScript mapping application without replacing its analytical results.
 
-**Deployment status:** GitHub Pages publication is being verified. Intended destination: `https://junholee-geo.github.io/transitscope-waterloo/`.
+**Live application:** [Open TransitScope](https://junholee-geo.github.io/transitscope-waterloo/) · [Source repository](https://github.com/JunhoLee-Geo/transitscope-waterloo)
+
+Published and browser-verified November 25, 2026. All nine deployed GeoJSON hashes match validated local files; see the [release QA record](docs/outreach-report/final-qa-report.md).
 
 ![Actual application map export with source attribution](docs/evidence/phase5-map-export.png)
 *Actual map exported by the application; this image excludes dashboard controls. Browser UI evidence and capture limitations are documented in the outreach package.*
 
 ## Purpose and study area
 
-Explore transit proximity across Cambridge, Kitchener, Waterloo, North Dumfries, Wellesley, Wilmot and Woolwich. The project connects reproducible spatial analysis with a static browser interface for a University of Waterloo GDS187 Geomatics Outreach Report and GIS development portfolio. It is not a live trip planner or an official agency application.
+Explore transit proximity across Cambridge, Kitchener, Waterloo, North Dumfries, Wellesley, Wilmot and Woolwich. The project connects reproducible spatial analysis with a static browser interface for a University of Waterloo GDS 187 Geomatics Outreach Report and GIS development portfolio. It is not a live trip planner or an official agency application.
 
 ## Features
 
 - Historical DA choropleth, priority areas and municipality-specific statistics.
-- Population-weighted municipal rankings for400m/800m access, residents beyond800m and priority DA count.
+- Population-weighted municipal rankings for 400 m / 800 m access, residents beyond 800 m and priority DA count.
 - Overview/Layers/Compare tabs, opacity and visibility controls, dynamic legends and responsive analytics drawer.
 - Local search for municipality, DAUID, stop name/ID and route; camera movement, highlighting and contextual details.
-- Separate24November2026scheduled stop frequency, route shapes and dissolved proximity buffers; network layers off by default.
+- Separate November 24, 2026 scheduled stop frequency, route shapes and dissolved proximity buffers; network layers off by default.
 - Light/Standard OSM streets and a street-free dark analysis background; unified map tools and graceful fullscreen fallback.
 - Selected-feature and comparison CSV, plus attributed map PNG exports.
 - Methodology, source and limitations views; source manifests and automated tests.
@@ -30,16 +32,16 @@ Values below are computed from saved DA estimates and reconciled against the ori
 |---|---:|
 |2021 study population|587,165|
 |Dissemination Areas|766|
-|Estimated residents within400m|437,870|
-|Estimated residents within800m|506,721|
-|Estimated residents beyond800m|80,444|
+|Estimated residents within 400 m|437,870|
+|Estimated residents within 800 m|506,721|
+|Estimated residents beyond 800 m|80,444|
 |Priority underserved DAs|52|
 
-Population estimates are rounded here; exports retain precision. Historical analysis date is9September2026. The original GTFS archive remains unavailable, and historical high-frequency population coverage is not validated. The separate GTFS release uses24November2026,07:00–19:00,America/Toronto; it does not update these population estimates.
+Population estimates are rounded here; exports retain precision. Historical analysis date is September 9, 2026. The original GTFS archive remains unavailable, and historical high-frequency population coverage is not validated. The separate GTFS release uses November 24, 2026, 07:00–19:00, America/Toronto; it does not update these population estimates.
 
 ## Technology and architecture
 
-HTML5/CSS3, ES modules, MapLibre GL JS6.19.0, Vite7.3.8, GeoJSON, Python/GeoPandas and GitHub Pages. No backend, UI framework, geocoding service or API key is required. WebGL and internet connectivity for street tiles are needed.
+HTML5/CSS3, ES modules, MapLibre GL JS 6.19.0, Vite 7.3.8, GeoJSON, Python/GeoPandas and GitHub Pages. No backend, UI framework, geocoding service or API key is required. WebGL and internet connectivity for street tiles are needed.
 
 ```text
 src/
@@ -55,21 +57,21 @@ src/
 public/data/       historical GeoJSON, summaries and source manifest
   transit/         five network GeoJSON files and GTFS manifest
 scripts/           preparation, download and release validation
- tests/            JavaScript and Python regression tests
- docs/             audits, learning log and validation records
+tests/            JavaScript and Python regression tests
+docs/             audits, learning log and validation records
   outreach-report/ academic evidence package
 .github/workflows/ reproducible Pages build/deployment
 ```
 
 ## Sources and methodology
 
-Historical Census/DA results come from Statistics Canada2021Census and the original analysis. Current municipal outlines and GTFS are from the Region of Waterloo/GRT, downloaded24November2026. [Data sources](docs/outreach-report/data-sources.md), [licensing](LICENSE.md), [historical manifest](public/data/manifest.json) and [network manifest](public/data/transit/manifest.json) record provenance.
+Historical Census/DA results come from Statistics Canada 2021 Census and the original analysis. Current municipal outlines and GTFS are from the Region of Waterloo/GRT, downloaded November 24, 2026. [Data sources](docs/outreach-report/data-sources.md), [licensing](LICENSE.md), [historical manifest](public/data/manifest.json) and [network manifest](public/data/transit/manifest.json) record provenance.
 
-Buffers are straight-line proximity, not walking distances. Covered population is area-weighted within DAs, assuming uniform density. Municipality rates divide summed covered population by summed population; percentages are not averaged across DAs. Priority selects less than50% within800m and at least500estimated residents beyond800m. Distances use EPSG:26917; web GeoJSON uses WGS84 longitude/latitude (EPSG:4326/RFC7946). Scheduled nonterminal, unrestricted-pickup departures are filtered by service date and window; average frequency does not measure headway consistency or reliability.
+Buffers are straight-line proximity, not walking distances. Covered population is area-weighted within DAs, assuming uniform density. Municipality rates divide summed covered population by summed population; percentages are not averaged across DAs. Priority selects less than 50% within 800 m and at least 500 estimated residents beyond 800 m. Distances use EPSG:26917; web GeoJSON uses WGS84 longitude/latitude (EPSG:4326/RFC7946). Scheduled nonterminal, unrestricted-pickup departures are filtered by service date and window; average frequency does not measure headway consistency or reliability.
 
 ## Local installation
 
-Use Node24 (Node22.12+ is supported) and npm:
+Use Node 24 (Node 22.12+ is supported) and npm:
 
 ```sh
 npm ci
@@ -89,7 +91,7 @@ The lockfile is committed. `dist/`, dependencies, raw archives, environments and
 
 ## Data processing and validation
 
-Create a Python3.12environment and install `requirements-data.txt`. Clone the original analysis separately, then run:
+Create a Python 3.12 environment and install `requirements-data.txt`. Clone the original analysis separately, then run:
 
 ```sh
 python scripts/prepare_data.py --source-dir /path/to/original-analysis
@@ -102,16 +104,16 @@ GTFS preparation requires the recorded archives and sources.json. See [GTFS work
 
 ## Deployment
 
-The workflow uses Node24, `npm ci`, tests, syntax checks and a Vite build, then publishes only `dist/` using GitHub Pages Actions. `GITHUB_ACTIONS` sets the production base to `/transitscope-waterloo/`; local development retains a relative base. Data uses Vite'sBASE_URL. Navigation uses dialogs rather than server routes.
+The workflow uses Node 24, `npm ci`, tests, syntax checks and a Vite build, then publishes only `dist/` using GitHub Pages Actions. `GITHUB_ACTIONS` sets the production base to `/transitscope-waterloo/`; local development retains a relative base. Data uses Vite's BASE_URL. Navigation uses dialogs rather than server routes.
 
 For a new deployment: create the separate public repository, push main, set Settings→Pages→Source to GitHub Actions, run the workflow, then verify the public application and its data URLs. See [deployment and QA record](docs/outreach-report/final-qa-report.md). Do not infer a successful deployment from the intended URL alone.
 
 ## Limitations and future work
 
-Historical GTFS recovery; walking-network/service-reliability analysis; source boundary version matching; broader screen-reader/cross-browser testing; measured low-end-device performance; and report-ready UI screenshot capture remain opportunities. Current routes and buffers stay regional when municipality filters are applied to DAs/stops. Stops appear at zoom11+ rather than clustering. PNG excludes HTML panels and refuses incomplete map loads. Fullscreen can be denied by embedded browsers. OSM tile services are external and best-effort; evaluate a production provider as traffic grows. Vite's MapLibre bundle-size warning remains.
+Historical GTFS recovery; walking-network/service-reliability analysis; source boundary version matching; broader screen-reader/cross-browser testing; measured low-end-device performance; and report-ready UI screenshot capture remain opportunities. Current routes and buffers stay regional when municipality filters are applied to DAs/stops. Stops appear at zoom 11+ rather than clustering. PNG excludes HTML panels and refuses incomplete map loads. Fullscreen can be denied by embedded browsers. OSM tile services are external and best-effort; evaluate a production provider as traffic grows. Vite's MapLibre bundle-size warning remains.
 
 ## Academic record and licensing
 
 The [outreach report package](docs/outreach-report/project-summary.md) and [learning log](docs/learning-log.md) separate automated implementation/testing from personal activities still to perform. No student reflection, tutorial completion or independent coding experience is invented.
 
-Adapted from Statistics Canada,2021Census. This does not constitute an endorsement by Statistics Canada of this product. Contains information provided by the Regional Municipality of Waterloo under licence. Basemap ©OpenStreetMap contributors. See [LICENSE.md](LICENSE.md) for separate software/data rights; no blanket software licence is applied to third-party data.
+Adapted from Statistics Canada, 2021 Census. This does not constitute an endorsement by Statistics Canada of this product. Contains information provided by the Regional Municipality of Waterloo under licence. Basemap © OpenStreetMap contributors. See [LICENSE.md](LICENSE.md) for separate software/data rights; no blanket software licence is applied to third-party data.

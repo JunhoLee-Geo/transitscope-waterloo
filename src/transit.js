@@ -130,7 +130,7 @@ export function installTransit(map, onSelectionChange, showFeature) {
         if (data.type !== 'FeatureCollection' || !Array.isArray(data.features)) throw new Error('Invalid GeoJSON');
         if (!data.features.length) { loaded[layer.key]='empty'; return; }
         collections[layer.key] = data;
-        map.addSource(id,{type:'geojson',data,attribution:'Contains Region of Waterloo information under licence'});
+        map.addSource(id,{type:'geojson',data,attribution:'Contains information provided by the Regional Municipality of Waterloo under licence'});
         let paint;
         if (layer.type === 'circle') paint = { 'circle-color':frequencyExpression(frequency.checked), 'circle-radius':['interpolate',['linear'],['zoom'],11,2,14,3.5,18,6], 'circle-stroke-color':['case',['boolean',['feature-state','hover'],false],'#172A3A','#ffffff'], 'circle-stroke-width':['interpolate',['linear'],['zoom'],11,0.3,16,0.8] };
         else if (layer.type === 'line') paint={'line-color':['match',['get','feed_id'],'lrt','#087F8C','#585C89'],'line-width':['interpolate',['linear'],['zoom'],8,1,13,2.5,17,4],'line-opacity':0.85};

@@ -1,0 +1,18 @@
+[
+  {
+    "url": "https://gis.regionofwaterloo.ca/wamap/rest/services/HousingCatalogue/MapServer/17",
+    "status": 200
+  },
+  {
+    "url": "https://github.com/JunhoLee-Geo/Waterloo-transit-accessibility",
+    "status": 200
+  },
+  {
+    "url": "https://www.grt.ca/about-grt/open-data/",
+    "status": 200
+  },
+  {
+    "url": "https://www.openstreetmap.org/copyright",
+    "status": 200
+  }
+]

@@ -1,0 +1,62 @@
+{
+  "url": "https://junholee-geo.github.io/transitscope-waterloo/",
+  "workflow_run": 45591062551,
+  "http_status": 200,
+  "results": [
+    {
+      "file": "data/da-accessibility.geojson",
+      "bytes": 1477088,
+      "sha256_matches_local": true
+    },
+    {
+      "file": "data/da-population.geojson",
+      "bytes": 1173455,
+      "sha256_matches_local": true
+    },
+    {
+      "file": "data/municipalities.geojson",
+      "bytes": 166068,
+      "sha256_matches_local": true
+    },
+    {
+      "file": "data/priority-underserved.geojson",
+      "bytes": 162483,
+      "sha256_matches_local": true
+    },
+    {
+      "file": "data/transit/coverage-400m.geojson",
+      "bytes": 753027,
+      "sha256_matches_local": true
+    },
+    {
+      "file": "data/transit/coverage-800m.geojson",
+      "bytes": 205182,
+      "sha256_matches_local": true
+    },
+    {
+      "file": "data/transit/high-frequency-400m.geojson",
+      "bytes": 472116,
+      "sha256_matches_local": true
+    },
+    {
+      "file": "data/transit/routes.geojson",
+      "bytes": 1001140,
+      "sha256_matches_local": true
+    },
+    {
+      "file": "data/transit/stops.geojson",
+      "bytes": 1344430,
+      "sha256_matches_local": true
+    },
+    {
+      "asset": "/transitscope-waterloo/assets/index-CrUp9tRc.js",
+      "status": 200,
+      "bytes": 1103383
+    },
+    {
+      "asset": "/transitscope-waterloo/assets/index-B79I584e.css",
+      "status": 200,
+      "bytes": 89141
+    }
+  ]
+}

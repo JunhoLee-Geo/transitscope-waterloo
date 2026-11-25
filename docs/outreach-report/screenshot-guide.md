@@ -13,3 +13,5 @@ For report-ready personal evidence, capture the live or local application with y
 5. Mobile view at 390×844, including attribution and accessible drawer.
 
 Save actual captures in screenshots/ with descriptive filenames and record URL, date, viewport, selected municipality and layer state. Do not crop away source attribution or replace real screenshots with mockups.
+
+Actual Phase 6 map and CSV exports are also saved in ../evidence/. These are exports, not full dashboard screenshots.
