@@ -1,0 +1,10 @@
+{
+  "source_url": "https://gis.regionofwaterloo.ca/wamap/rest/services/HousingCatalogue/MapServer/17",
+  "query_url": "https://gis.regionofwaterloo.ca/wamap/rest/services/HousingCatalogue/MapServer/17/query?where=1%3D1&outFields=*&outSR=4326&f=geojson",
+  "retrieved_date": "2026-11-24",
+  "source_crs": "EPSG:26917",
+  "response_crs": "EPSG:4326",
+  "feature_count": 7,
+  "sha256": "82919b8a25fbe9e67fb04c0f39927a59c2938a0730f73acfe6868a6a71c61b4e",
+  "snapshot_caveat": "Current official boundary context, not verified as the original analysis snapshot. Source describes pragmatic taxation/parcel-based boundaries, known or suspected errors, and cautions that these are not definitive legal boundaries."
+}

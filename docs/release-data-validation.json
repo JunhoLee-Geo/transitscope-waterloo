@@ -1,0 +1,646 @@
+{
+  "checked_at_utc": "2026-11-25T09:58:28.283863+00:00",
+  "status": "passed",
+  "environment": {
+    "python": "3.12.14",
+    "geopandas": "1.2.0",
+    "shapely": "2.2.0"
+  },
+  "coordinate_note": "RFC7946 GeoJSON longitude/latitude; reader identifies EPSG:4326. Numeric bounds and source transformations corroborate CRS; coordinates alone cannot prove a datum.",
+  "layers": {
+    "da-accessibility.geojson": {
+      "features": 766,
+      "geometry_types": {
+        "Polygon": 766
+      },
+      "crs": "EPSG:4326",
+      "bounds": [
+        -80.8690403,
+        43.2668105,
+        -80.1876067,
+        43.6896045
+      ],
+      "invalid_geometries": 0,
+      "duplicate_ids": 0,
+      "nulls_by_field": {
+        "id": 0,
+        "fid": 0,
+        "DAUID": 0,
+        "DGUID": 0,
+        "LANDAREA": 0,
+        "PRUID": 0,
+        "Population": 0,
+        "da_area": 0,
+        "access_400_area": 0,
+        "access_400_ratio": 0,
+        "pop_access_400": 0,
+        "access_800_area": 0,
+        "access_800_ratio": 0,
+        "pop_access_800": 0,
+        "Pct_Access_400": 0,
+        "Pct_Access_800": 0,
+        "Pop_Beyond_800": 0,
+        "FullName": 0,
+        "Pct_Beyond_800": 0
+      },
+      "blank_strings_by_field": {
+        "id": 0,
+        "fid": 0,
+        "DAUID": 0,
+        "DGUID": 0,
+        "LANDAREA": 0,
+        "PRUID": 0,
+        "Population": 0,
+        "da_area": 0,
+        "access_400_area": 0,
+        "access_400_ratio": 0,
+        "pop_access_400": 0,
+        "access_800_area": 0,
+        "access_800_ratio": 0,
+        "pop_access_800": 0,
+        "Pct_Access_400": 0,
+        "Pct_Access_800": 0,
+        "Pop_Beyond_800": 0,
+        "FullName": 0,
+        "Pct_Beyond_800": 0
+      },
+      "sha256": "c993bef824238b9cdfea7a0c03ce96a97e407dbd92b28a99df67f85ff37bca1b",
+      "bytes": 1477088,
+      "manifest_hash_matches": true
+    },
+    "da-population.geojson": {
+      "features": 766,
+      "geometry_types": {
+        "Polygon": 766
+      },
+      "crs": "EPSG:4326",
+      "bounds": [
+        -80.8690403,
+        43.2668105,
+        -80.1876067,
+        43.6896045
+      ],
+      "invalid_geometries": 0,
+      "duplicate_ids": 0,
+      "nulls_by_field": {
+        "id": 0,
+        "fid": 0,
+        "DAUID": 0,
+        "DGUID": 0,
+        "LANDAREA": 0,
+        "PRUID": 0,
+        "Population": 0
+      },
+      "blank_strings_by_field": {
+        "id": 0,
+        "fid": 0,
+        "DAUID": 0,
+        "DGUID": 0,
+        "LANDAREA": 0,
+        "PRUID": 0,
+        "Population": 0
+      },
+      "sha256": "ce97a2cb2901c97de38e76ea7c6dced1766090800de70e658e85298e8a1cf47b",
+      "bytes": 1173455,
+      "manifest_hash_matches": true
+    },
+    "municipalities.geojson": {
+      "features": 7,
+      "geometry_types": {
+        "Polygon": 7
+      },
+      "crs": "EPSG:4326",
+      "bounds": [
+        -80.869028,
+        43.266819,
+        -80.189286,
+        43.689551
+      ],
+      "invalid_geometries": 0,
+      "duplicate_ids": 0,
+      "nulls_by_field": {
+        "id": 0,
+        "OBJECTID": 0,
+        "Municipality": 0,
+        "FullName": 0
+      },
+      "blank_strings_by_field": {
+        "id": 0,
+        "OBJECTID": 0,
+        "Municipality": 0,
+        "FullName": 0
+      },
+      "sha256": "25e2e83856f944cc5ac754784828d6d198a1795b2b750a5957e15e4c8de0f7d0",
+      "bytes": 166068,
+      "manifest_hash_matches": true
+    },
+    "priority-underserved.geojson": {
+      "features": 52,
+      "geometry_types": {
+        "Polygon": 52
+      },
+      "crs": "EPSG:4326",
+      "bounds": [
+        -80.86904,
+        43.26681,
+        -80.187607,
+        43.676669
+      ],
+      "invalid_geometries": 0,
+      "duplicate_ids": 0,
+      "nulls_by_field": {
+        "id": 0,
+        "fid": 0,
+        "DAUID": 0,
+        "DGUID": 0,
+        "LANDAREA": 0,
+        "PRUID": 0,
+        "Population": 0,
+        "da_area": 0,
+        "access_400_area": 0,
+        "access_400_ratio": 0,
+        "pop_access_400": 0,
+        "access_800_area": 0,
+        "access_800_ratio": 0,
+        "pop_access_800": 0,
+        "Pct_Access_400": 0,
+        "Pct_Access_800": 0,
+        "Pop_Beyond_800": 0,
+        "FullName": 0,
+        "Pct_Beyond_800": 0
+      },
+      "blank_strings_by_field": {
+        "id": 0,
+        "fid": 0,
+        "DAUID": 0,
+        "DGUID": 0,
+        "LANDAREA": 0,
+        "PRUID": 0,
+        "Population": 0,
+        "da_area": 0,
+        "access_400_area": 0,
+        "access_400_ratio": 0,
+        "pop_access_400": 0,
+        "access_800_area": 0,
+        "access_800_ratio": 0,
+        "pop_access_800": 0,
+        "Pct_Access_400": 0,
+        "Pct_Access_800": 0,
+        "Pop_Beyond_800": 0,
+        "FullName": 0,
+        "Pct_Beyond_800": 0
+      },
+      "sha256": "fad8d26fa9da4f5fa6a53c9f8ae4d9c3e44d831b169b6dff5f3da43504a8d332",
+      "bytes": 162483,
+      "manifest_hash_matches": true
+    },
+    "transit/coverage-400m.geojson": {
+      "features": 1,
+      "geometry_types": {
+        "MultiPolygon": 1
+      },
+      "crs": "EPSG:4326",
+      "bounds": [
+        -80.72183035269461,
+        43.33287842140583,
+        -80.26673776432762,
+        43.60382454929871
+      ],
+      "invalid_geometries": 0,
+      "duplicate_ids": 0,
+      "nulls_by_field": {
+        "id": 0,
+        "distance_m": 0,
+        "stop_count": 0,
+        "service_date": 0,
+        "population_analysis": 0,
+        "method": 0
+      },
+      "blank_strings_by_field": {
+        "id": 0,
+        "distance_m": 0,
+        "stop_count": 0,
+        "service_date": 0,
+        "population_analysis": 0,
+        "method": 0
+      },
+      "sha256": "b2416b20cdc802798a6034a9b3bb76ffbb0df91ae06db237093043469c65d5ea",
+      "bytes": 753027,
+      "manifest_hash_matches": true
+    },
+    "transit/coverage-800m.geojson": {
+      "features": 1,
+      "geometry_types": {
+        "MultiPolygon": 1
+      },
+      "crs": "EPSG:4326",
+      "bounds": [
+        -80.72676870843462,
+        43.32927684050603,
+        -80.26180253666998,
+        43.607426096306924
+      ],
+      "invalid_geometries": 0,
+      "duplicate_ids": 0,
+      "nulls_by_field": {
+        "id": 0,
+        "distance_m": 0,
+        "stop_count": 0,
+        "service_date": 0,
+        "population_analysis": 0,
+        "method": 0
+      },
+      "blank_strings_by_field": {
+        "id": 0,
+        "distance_m": 0,
+        "stop_count": 0,
+        "service_date": 0,
+        "population_analysis": 0,
+        "method": 0
+      },
+      "sha256": "800db30fa6545c62b668315e613ccc8a5dee090cd1689de60475f5bb8fc853bb",
+      "bytes": 205182,
+      "manifest_hash_matches": true
+    },
+    "transit/high-frequency-400m.geojson": {
+      "features": 1,
+      "geometry_types": {
+        "MultiPolygon": 1
+      },
+      "crs": "EPSG:4326",
+      "bounds": [
+        -80.59967923536506,
+        43.3508754456357,
+        -80.29807117779609,
+        43.521690577529505
+      ],
+      "invalid_geometries": 0,
+      "duplicate_ids": 0,
+      "nulls_by_field": {
+        "id": 0,
+        "distance_m": 0,
+        "stop_count": 0,
+        "service_date": 0,
+        "population_analysis": 0,
+        "method": 0
+      },
+      "blank_strings_by_field": {
+        "id": 0,
+        "distance_m": 0,
+        "stop_count": 0,
+        "service_date": 0,
+        "population_analysis": 0,
+        "method": 0
+      },
+      "sha256": "fcf99baf751c9f97bb5ad004654f985ca7e42a4ceb548a4f236d703e862d83cb",
+      "bytes": 472116,
+      "manifest_hash_matches": true
+    },
+    "transit/routes.geojson": {
+      "features": 167,
+      "geometry_types": {
+        "LineString": 167
+      },
+      "crs": "EPSG:4326",
+      "bounds": [
+        -80.718908,
+        43.336557,
+        -80.271286,
+        43.600443
+      ],
+      "invalid_geometries": 0,
+      "duplicate_ids": 0,
+      "nulls_by_field": {
+        "id": 0,
+        "route_short_name": 0,
+        "route_long_name": 0,
+        "route_type": 0,
+        "route_id": 0,
+        "shape_id": 0,
+        "feed_id": 0,
+        "service_date": 0,
+        "provider": 0,
+        "source_url": 0
+      },
+      "blank_strings_by_field": {
+        "id": 0,
+        "route_short_name": 0,
+        "route_long_name": 0,
+        "route_type": 0,
+        "route_id": 0,
+        "shape_id": 0,
+        "feed_id": 0,
+        "service_date": 0,
+        "provider": 0,
+        "source_url": 0
+      },
+      "sha256": "4065773e893ad55e26b751f0fade9783c8fa8262d9f6541e9b57946b0c296787",
+      "bytes": 1001140,
+      "manifest_hash_matches": true
+    },
+    "transit/stops.geojson": {
+      "features": 2289,
+      "geometry_types": {
+        "Point": 2289
+      },
+      "crs": "EPSG:4326",
+      "bounds": [
+        -80.716892,
+        43.33648,
+        -80.271673,
+        43.600223
+      ],
+      "invalid_geometries": 0,
+      "duplicate_ids": 0,
+      "nulls_by_field": {
+        "id": 0,
+        "stop_id": 0,
+        "stop_name": 0,
+        "feed_id": 0,
+        "parent_station": 0,
+        "municipality": 0,
+        "scheduled_departures": 0,
+        "departures_per_hour": 0,
+        "frequency_class": 0,
+        "route_ids": 0,
+        "route_labels": 0,
+        "service_date": 0,
+        "window_start": 0,
+        "window_end": 0,
+        "provider": 0,
+        "source_url": 0
+      },
+      "blank_strings_by_field": {
+        "id": 0,
+        "stop_id": 0,
+        "stop_name": 0,
+        "feed_id": 0,
+        "parent_station": 2216,
+        "municipality": 0,
+        "scheduled_departures": 0,
+        "departures_per_hour": 0,
+        "frequency_class": 0,
+        "route_ids": 6,
+        "route_labels": 6,
+        "service_date": 0,
+        "window_start": 0,
+        "window_end": 0,
+        "provider": 0,
+        "source_url": 0
+      },
+      "sha256": "e9d0f70acea9cdd678faf1ba29b0a6f4ec32671baab83021f8a0fa3eed5dec8a",
+      "bytes": 1344430,
+      "manifest_hash_matches": true
+    }
+  },
+  "original_source_comparisons": {
+    "da-population.geojson": {
+      "source_file": "data/processed/waterloo_da_population.gpkg",
+      "source_layer": "waterloo_da_population",
+      "original_sha256_matches": true,
+      "attributes_equal": true,
+      "fields_compared": [
+        "DGUID",
+        "LANDAREA",
+        "PRUID",
+        "Population"
+      ],
+      "maximum_geometry_hausdorff_difference_metres": 0.006582453296822651
+    },
+    "da-accessibility.geojson": {
+      "source_file": "data/processed/waterloo_accessibility.gpkg",
+      "source_layer": "da_accessibility",
+      "original_sha256_matches": true,
+      "attributes_equal": true,
+      "fields_compared": [
+        "DGUID",
+        "LANDAREA",
+        "PRUID",
+        "Population",
+        "da_area",
+        "access_400_area",
+        "access_400_ratio",
+        "pop_access_400",
+        "access_800_area",
+        "access_800_ratio",
+        "pop_access_800",
+        "Pct_Access_400",
+        "Pct_Access_800",
+        "Pop_Beyond_800",
+        "FullName",
+        "Pct_Beyond_800"
+      ],
+      "maximum_geometry_hausdorff_difference_metres": 0.006582453296822651
+    },
+    "priority-underserved.geojson": {
+      "source_file": "data/processed/waterloo_accessibility.gpkg",
+      "source_layer": "priority_underserved",
+      "original_sha256_matches": true,
+      "attributes_equal": true,
+      "fields_compared": [
+        "DGUID",
+        "LANDAREA",
+        "PRUID",
+        "Population",
+        "da_area",
+        "access_400_area",
+        "access_400_ratio",
+        "pop_access_400",
+        "access_800_area",
+        "access_800_ratio",
+        "pop_access_800",
+        "Pct_Access_400",
+        "Pct_Access_800",
+        "Pop_Beyond_800",
+        "FullName",
+        "Pct_Beyond_800"
+      ],
+      "maximum_geometry_hausdorff_difference_metres": 0.06845599779339125
+    }
+  },
+  "limitations": [
+    "Historical GTFS archive not recovered; high-frequency historical population coverage not verified.",
+    "Straight-line buffer / uniform population-density assumptions remain; validation does not prove walking accessibility.",
+    "Current GTFS is scheduled service, not live observations.",
+    "Optional GTFS blank parent_station and route labels for zero-service stops are expected; all null/blank counts are reported.",
+    "Original analysis repository has no software/data licence file in the inspected clone; redistribution requires separate rights review. This audit is not a legal determination.",
+    "Current municipal outlines are contextual, not verified as historical or definitive legal boundaries."
+  ],
+  "historical_references": {
+    "study_population": {
+      "observed": 587165.0,
+      "reference_rounded": 587165,
+      "difference_from_rounded_reference": 0.0,
+      "matches_reported_precision": true
+    },
+    "dissemination_areas": {
+      "observed": 766,
+      "reference_rounded": 766,
+      "difference_from_rounded_reference": 0,
+      "matches_reported_precision": true
+    },
+    "population_within_400m": {
+      "observed": 437869.9076950905,
+      "reference_rounded": 437870,
+      "difference_from_rounded_reference": -0.09230490948539227,
+      "matches_reported_precision": true
+    },
+    "population_within_800m": {
+      "observed": 506721.03532822966,
+      "reference_rounded": 506721,
+      "difference_from_rounded_reference": 0.035328229656443,
+      "matches_reported_precision": true
+    },
+    "population_beyond_800m": {
+      "observed": 80443.96467177026,
+      "reference_rounded": 80444,
+      "difference_from_rounded_reference": -0.03532822974375449,
+      "matches_reported_precision": true
+    },
+    "priority_das": {
+      "observed": 52,
+      "reference_rounded": 52,
+      "difference_from_rounded_reference": 0,
+      "matches_reported_precision": true
+    }
+  },
+  "historical_numeric_roundoff": {
+    "minimum_beyond800": -2.2737367544323206e-12,
+    "maximum_pct800": 100.00000000000013,
+    "validation_tolerance": 1e-07
+  },
+  "municipalities": [
+    {
+      "name": "City of Cambridge",
+      "da_count": 189,
+      "population": 138479.0,
+      "within400": 116059.52824931967,
+      "within800": 133119.8931969775,
+      "weighted_percent400": 83.81020100471528,
+      "weighted_percent800": 96.13002202281754,
+      "beyond800": 5359.1068030225,
+      "priority_das": 1,
+      "original_and_exported_csv_totals_match": true
+    },
+    {
+      "name": "City of Kitchener",
+      "da_count": 321,
+      "population": 256885.0,
+      "within400": 212969.28284785795,
+      "within800": 241951.27917746373,
+      "weighted_percent400": 82.9045225870946,
+      "weighted_percent800": 94.18661236641444,
+      "beyond800": 14933.72082253627,
+      "priority_das": 4,
+      "original_and_exported_csv_totals_match": true
+    },
+    {
+      "name": "City of Waterloo",
+      "da_count": 155,
+      "population": 121436.0,
+      "within400": 98311.5966942418,
+      "within800": 112007.94360200636,
+      "weighted_percent400": 80.95753869877285,
+      "weighted_percent800": 92.23619322277278,
+      "beyond800": 9428.056397993641,
+      "priority_das": 5,
+      "original_and_exported_csv_totals_match": true
+    },
+    {
+      "name": "Township of North Dumfries",
+      "da_count": 17,
+      "population": 10619.0,
+      "within400": 14.562196598356959,
+      "within800": 111.48333010026637,
+      "weighted_percent400": 0.13713340802671586,
+      "weighted_percent800": 1.0498477267187718,
+      "beyond800": 10507.516669899733,
+      "priority_das": 10,
+      "original_and_exported_csv_totals_match": true
+    },
+    {
+      "name": "Township of Wellesley",
+      "da_count": 19,
+      "population": 11318.0,
+      "within400": 0.0,
+      "within800": 0.0,
+      "weighted_percent400": 0.0,
+      "weighted_percent800": 0.0,
+      "beyond800": 11318.0,
+      "priority_das": 11,
+      "original_and_exported_csv_totals_match": true
+    },
+    {
+      "name": "Township of Wilmot",
+      "da_count": 29,
+      "population": 21429.0,
+      "within400": 5416.941602058371,
+      "within800": 10074.423876687222,
+      "weighted_percent400": 25.27855523850096,
+      "weighted_percent800": 47.01303783045043,
+      "beyond800": 11354.576123312778,
+      "priority_das": 6,
+      "original_and_exported_csv_totals_match": true
+    },
+    {
+      "name": "Township of Woolwich",
+      "da_count": 36,
+      "population": 26999.0,
+      "within400": 5097.996105014327,
+      "within800": 9456.01214499462,
+      "weighted_percent400": 18.882166395104736,
+      "weighted_percent800": 35.023564372734626,
+      "beyond800": 17542.98785500538,
+      "priority_das": 15,
+      "original_and_exported_csv_totals_match": true
+    }
+  ],
+  "network": {
+    "service_date": "2026-11-24",
+    "window": [
+      "07:00",
+      "19:00"
+    ],
+    "timezone": "America/Toronto",
+    "class_counts": {
+      "Moderate": 1492,
+      "High": 402,
+      "Low": 389,
+      "No service": 6
+    },
+    "feeds": [
+      {
+        "feed_id": "bus",
+        "source_url": "https://webapps.regionofwaterloo.ca/api/grt-routes/api/staticfeeds/1",
+        "downloaded_at_utc": "2026-11-24T17:39:49.698028+00:00",
+        "archive_sha256": "e0a15429750a969756b78c8e84262aad7fcb16359321c9468a8335d787a0c3f1",
+        "archive_hash_matches": true,
+        "boarding_stops": 2257,
+        "independent_boardable_departures": 80427,
+        "every_stop_count_matches": true
+      },
+      {
+        "feed_id": "lrt",
+        "source_url": "https://webapps.regionofwaterloo.ca/api/grt-routes/api/staticfeeds/2",
+        "downloaded_at_utc": "2026-11-24T17:39:49.755075+00:00",
+        "archive_sha256": "9f872bb7bc6ca99029e6426a50e5a2167a96522f13ad97b92a8177b04a84b34c",
+        "archive_hash_matches": true,
+        "boarding_stops": 32,
+        "independent_boardable_departures": 2135,
+        "every_stop_count_matches": true
+      }
+    ],
+    "nesting_roundoff": {
+      "coverage400_outside800_m2": 0.0,
+      "high400_outside400_m2": 2.2054196309614048e-07,
+      "distance_tolerance_m": 0.001,
+      "area_tolerance_m2": 0.001
+    },
+    "buffer_nesting_and_stop_inclusion": true
+  },
+  "historical_analysis_date": {
+    "value": "2026-09-09",
+    "evidence": "Original notebook 06_service_frequency and project data inventory; historical GTFS archive unavailable, so date is an analysis record, not proof of historical feed identity."
+  },
+  "spatial_inputs_unchanged": true
+}

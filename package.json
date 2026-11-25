@@ -1,0 +1,24 @@
+{
+  "name": "transitscope-waterloo",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "check": "node --check src/main.js && node --check src/data.js && node --check vite.config.js && node --check src/transit.js && node --check src/dashboard.js && node --check src/statistics.js && node --check src/search.js && node --check src/export.js && node --check src/map-tools.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "maplibre-gl": "6.19.0"
+  },
+  "devDependencies": {
+    "vite": "^7.0.0"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}
+
+
